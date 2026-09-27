@@ -4,24 +4,22 @@ const items = [
   {
     icon: Wrench,
     title: "Setup Assistance",
-    description:
-      "A helping hand from day one. We’ll help you get up and running.",
+    description: "Get up and running.",
   },
   {
     icon: Headphones,
     title: "Product Support",
-    description: "A question in the middle of your day? We’re here to help.",
+    description: "Ask. We’ll help.",
   },
   {
     icon: Bug,
     title: "Bug Fixes",
-    description: "Something not working right? Let’s get it sorted together.",
+    description: "Report it. Let’s sort it.",
   },
   {
     icon: Lightbulb,
     title: "Feature Assistance",
-    description:
-      "Get more from your POS with guidance on the features you need.",
+    description: "Make every feature count.",
   },
 ];
 export default function Support({ onSupport }: { onSupport: () => void }) {
@@ -32,7 +30,6 @@ export default function Support({ onSupport }: { onSupport: () => void }) {
           <SectionHeading
             eyebrow="REAL PEOPLE. REAL HELP."
             title="Support when you need it."
-            description="You take care of your customers. We’ll take care of you."
           />
           <button className="text-link" onClick={onSupport}>
             Contact Support <ArrowUpRight size={18} />

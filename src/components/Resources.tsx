@@ -25,8 +25,9 @@ export const resources = [
     description: "A little guidance goes a long way.",
     content: [
       "Billing: explore the live demo above. Pick a category or search for an item, tap it to add it to the order, and adjust quantities before payment.",
-      "Tables: open the Smarter service tab to see a sample floor plan. Select a table to view its availability.",
-      "Reports: use the Clearer insights tab to explore example sales totals, order counts and daily trends. All figures on this website are demonstration data.",
+      "Tables: select a table to open billing. Your current order stays with you.",
+      "Inventory: complete a sale to reduce stock, or tap Add 10 to restock an item.",
+      "Reports: see your demo sales totals update. Orders: mark an order ready, then served. All data is illustrative.",
     ],
   },
   {

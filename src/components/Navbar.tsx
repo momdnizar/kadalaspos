@@ -2,8 +2,8 @@ import { useState } from "react";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import { Logo, Button } from "./ui";
 export const navigation = [
-  ["Product", "#product"],
-  ["Earn With Us", "#partners"],
+  ["Product", "#demo"],
+  ["Pricing", "#pricing"],
   ["Support", "#support"],
   ["Resources", "#resources"],
 ];
@@ -21,7 +21,14 @@ export default function Navbar({ onStart }: { onStart: () => void }) {
           ))}
         </nav>
         <div className="nav-actions">
-          <Button onClick={onStart}>Get Started</Button>
+          <Button
+            onClick={() => {
+              setOpen(false);
+              onStart();
+            }}
+          >
+            Try Kadalas POS
+          </Button>
           <button
             className="menu-toggle"
             aria-label={open ? "Close menu" : "Open menu"}

@@ -16,7 +16,7 @@ npm run build
 npm run test:e2e
 ```
 
-The POS screens use sample data and support adding items, searching, changing quantities and selecting tables. Payments are simulated. The carousel pauses on hover or keyboard focus, offers manual pause, and respects reduced motion.
+The hero opens directly into a hands-on POS demo. Billing, tables, inventory, reports and orders share session state: a sample sale reduces stock, creates an order and updates reports. Payments are simulated. Visitors can take a short optional walkthrough or explore freely, without signing up. Reset restores sample data. Mobile layouts use full-size controls rather than shrinking a desktop screenshot.
 
 Browser tests use locally installed Microsoft Edge. Change `channel` in `playwright.config.ts` to use another installed browser.
 
@@ -26,6 +26,6 @@ Browser tests use locally installed Microsoft Edge. Change `channel` in `playwri
 - Connect the enquiry form in `src/components/Modal.tsx` to your approved contact service. It currently prepares a copyable draft, explicitly sends nothing and stores nothing.
 - Set official social URLs in `src/components/Footer.tsx`; current links are labelled platform homepages.
 - Export `public/social-card.svg` to a PNG. Set absolute production Open Graph image/URL metadata and canonical URL in `index.html` once the domain is confirmed.
-- Confirm product descriptions, partner reward terms and support availability with the business.
+- Confirm product descriptions, pricing, partner reward terms and support availability with the business. The pricing section requests a quote; no plan prices have been invented.
 
 Menu preview photography is served from Unsplash; the font is served from Google Fonts. Self-host assets if required for deployment.

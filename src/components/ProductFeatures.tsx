@@ -12,51 +12,44 @@ export const features = [
   {
     icon: ReceiptText,
     title: "Quick Billing",
-    description:
-      "Take orders, split bills and check out in seconds. Keep the queue moving and your customers smiling.",
+    description: "Tap. Bill. Done.",
   },
   {
     icon: Grid2X2,
     title: "Table Management",
-    description:
-      "Know what’s happening at every table. Manage seating, open orders and service in one clear view.",
+    description: "Your whole floor, in view.",
   },
   {
     icon: Package,
     title: "Inventory Management",
-    description:
-      "Keep an eye on your stock. Know what’s running low before your kitchen runs out.",
+    description: "Know what’s low. Stay ready.",
   },
   {
     icon: ChartNoAxesCombined,
     title: "Sales & Reports",
-    description:
-      "Turn everyday sales into useful insights. See what’s selling and make better business decisions.",
+    description: "Clear numbers. Better decisions.",
   },
   {
     icon: ClipboardList,
     title: "Order Management",
-    description:
-      "Dine-in, takeaway or delivery. Keep every order organised, from the counter to the kitchen.",
+    description: "Every order. Nothing missed.",
   },
   {
     icon: Store,
     title: "Multi-Outlet Support",
-    description:
-      "One outlet today. More tomorrow. Stay in control of every location from one place.",
+    description: "More outlets. One place.",
   },
 ];
 export default function ProductFeatures() {
   return (
     <section id="product" className="section container">
       <SectionHeading
-        eyebrow="LESS JUGGLING. MORE DOING."
-        title="Everything you need to run your F&B business."
-        description="Your day is busy enough. Let one simple system handle the details."
+        eyebrow="THAT SIMPLE. THIS CAPABLE."
+        title="Small effort. Full control."
       />
       <div className="features-grid">
         {features.map(({ icon: Icon, title, description }, i) => (
-          <a href={`#showcase`} className="feature-card" key={title}>
+          <a href="#demo" className="feature-card" key={title}>
             <div className="feature-top">
               <span className="feature-icon">
                 <Icon size={23} />

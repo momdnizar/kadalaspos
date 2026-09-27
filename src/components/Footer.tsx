@@ -14,12 +14,10 @@ export default function Footer({
       <section className="container final-cta">
         <div>
           <span className="eyebrow">LESS COMPLEXITY. MORE POSSIBILITY.</span>
-          <h2>Your next chapter starts here.</h2>
-          <p>Let’s make running your business a little simpler.</p>
+          <h2>Less thinking. More doing.</h2>
+          <p>Your POS is ready to try.</p>
         </div>
-        <Button onClick={onStart}>
-          Get Started <span className="sr-only">with Kadalas POS</span>
-        </Button>
+        <Button href="#demo">Try Kadalas POS</Button>
       </section>
       <footer>
         <div className="container footer-main">
@@ -56,7 +54,7 @@ export default function Footer({
           <div>
             <h3>Product</h3>
             <a href="#product">Features</a>
-            <a href="#showcase">Product tour</a>
+            <a href="#demo">Product tour</a>
             <button onClick={onStart}>
               Get started <ArrowUpRight size={12} />
             </button>

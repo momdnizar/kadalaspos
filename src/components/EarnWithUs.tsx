@@ -4,19 +4,17 @@ const steps = [
   {
     icon: UserPlus,
     title: "Refer a business",
-    description:
-      "Know a café, restaurant or bakery? Introduce them to Kadalas POS.",
+    description: "Introduce a business to Kadalas.",
   },
   {
     icon: Rocket,
     title: "Business gets started",
-    description: "We help them get set up and ready for their first order.",
+    description: "We help them get set up.",
   },
   {
     icon: Wallet,
     title: "You earn",
-    description:
-      "Get rewarded for successful referrals. Grow together with us.",
+    description: "Earn for successful referrals.",
   },
 ];
 export default function EarnWithUs({ onPartner }: { onPartner: () => void }) {
@@ -31,10 +29,7 @@ export default function EarnWithUs({ onPartner }: { onPartner: () => void }) {
           <br />
           <span>Grow with them.</span>
         </h2>
-        <p>
-          Bring Kadalas POS to the businesses around you and turn your
-          connections into opportunities. Simple referrals. Shared success.
-        </p>
+        <p>Simple referrals. Shared success.</p>
         <Button onClick={onPartner}>Become a Partner</Button>
         <small>We’ll walk you through the programme and reward terms.</small>
       </div>
